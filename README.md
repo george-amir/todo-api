@@ -49,7 +49,7 @@ php bin/console todo-app:install
 php bin/console server:run
 ```
 
-you can now go to api/register to register a user then you can use the application
+you can now go to http://localhost:8000/app_dev.php/api/register to register a new user then you can use the application with the generated token
 
 ## Testing
 
