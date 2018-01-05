@@ -54,27 +54,27 @@ you can now go to api/register to register a user then you can use the applicati
 ## Testing
 
 All routes has been tested using phpunit with the following test cases:
-[x] Register new user with right parameters
-[x] Register new user with existed username
-[x] Register new user with existed email
-[x] Register new user with missing parameters
-[x] User login with right credentials
-[x] User login with wrong credentials
-[x] User login with missing parameters
-[x] Create new list with right parameters
-[x] Create new list with missing parameters
-[x] Get all user lists
-[x] Access spesific list owned by the user
-[x] Access spesific list doesn't owned by the user
-[x] Edit existing list with right parameters
-[x] Edit existing list with missing parameters
-[x] Create new item in an existing list with right parameters
-[x] Create new item in an existing list with missing parameters
-[x] Create an item in a list doesn't exist
-[x] Edit item in an existing list with right parameters
-[x] Edit item doesn't owned by the user
-[x] Edit item in an existing list with missing parameters
-[x] Delete item in an existing list with right parameters
-[x] Delete item doesn't owned by the user
-[x] Delete existing list owned by the user
-[x] Delete existing list doesn't owned by the user
+- [x] Register new user with right parameters
+- [x] Register new user with existed username
+- [x] Register new user with existed email
+- [x] Register new user with missing parameters
+- [x] User login with right credentials
+- [x] User login with wrong credentials
+- [x] User login with missing parameters
+- [x] Create new list with right parameters
+- [x] Create new list with missing parameters
+- [x] Get all user lists
+- [x] Access spesific list owned by the user
+- [x] Access spesific list doesn't owned by the user
+- [x] Edit existing list with right parameters
+- [x] Edit existing list with missing parameters
+- [x] Create new item in an existing list with right parameters
+- [x] Create new item in an existing list with missing parameters
+- [x] Create an item in a list doesn't exist
+- [x] Edit item in an existing list with right parameters
+- [x] Edit item doesn't owned by the user
+- [x] Edit item in an existing list with missing parameters
+- [x] Delete item in an existing list with right parameters
+- [x] Delete item doesn't owned by the user
+- [x] Delete existing list owned by the user
+- [x] Delete existing list doesn't owned by the user
