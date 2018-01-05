@@ -35,7 +35,7 @@ class InstallCommand extends ContainerAwareCommand
 		$client_secret = $this->generateRandomString(40);
 		$secret = $this->generateRandomString(40);
 		$output->writeln('client_id: '.$client_id);
-		$output->writeln('client_secret: '.$client_secret)
+		$output->writeln('client_secret: '.$client_secret);
 		$output->writeln('app_secret: '.$secret);
 		
 		$yaml = new Parser();
