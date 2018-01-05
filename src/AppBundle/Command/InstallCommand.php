@@ -33,14 +33,17 @@ class InstallCommand extends ContainerAwareCommand
         $output->writeln('Generating client_id and client_secret...');
 		$client_id = $this->generateRandomString(52);
 		$client_secret = $this->generateRandomString(40);
+		$secret = $this->generateRandomString(40);
 		$output->writeln('client_id: '.$client_id);
-		$output->writeln('client_secret: '.$client_secret);
+		$output->writeln('client_secret: '.$client_secret)
+		$output->writeln('app_secret: '.$secret);
 		
 		$yaml = new Parser();
 
 		$yamlValue = $yaml->parse(file_get_contents('./app/config/parameters.yml'));
 		$yamlValue['parameters']['client_id'] = '1_'.$client_id;
 		$yamlValue['parameters']['client_secret'] = $client_secret;
+		$yamlValue['parameters']['secret'] = $secret;
 		
 		$em = $this->getContainer()->get('doctrine')->getManager();
 
