@@ -4,7 +4,8 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use AppBundle\Mapping\EntityBase;
-
+use JMS\Serializer\Annotation\ExclusionPolicy;
+use JMS\Serializer\Annotation\Expose;
 /**
  * Class TodoListItem
  * @package AppBundle\Entity
@@ -12,6 +13,7 @@ use AppBundle\Mapping\EntityBase;
  * @ORM\Entity
  * @ORM\Table(name="list_items")
  * @ORM\HasLifecycleCallbacks
+ * @ExclusionPolicy("all")
  */
 class TodoListItem extends EntityBase
 {
@@ -19,16 +21,19 @@ class TodoListItem extends EntityBase
 	 * @ORM\Column(type="integer")
 	 * @ORM\Id
 	 * @ORM\GeneratedValue(strategy="AUTO")
+	 * @Expose
 	 */
 	protected $id;
 	
 	/**
 	 * @ORM\Column(type="string")
+	 * @Expose
 	 */
 	protected $description;
 	
 	/**
 	 * @ORM\Column(name="is_completed", type="boolean")
+	 * @Expose
 	 */
 	protected $isCompleted = 0;
 	
